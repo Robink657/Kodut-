@@ -1,0 +1,24 @@
+static void Main(string[] args)
+        {
+            Console.WriteLine("Palun sisesta´oma vanus");
+            int Kasutajamärk = int.Parse(Console.ReadLine());
+            int Start = 0;
+            while (Start <= Kasutajamärk) ;
+            {
+                Console.Write(Start + "");
+                Start = Start + 2;
+
+
+
+
+
+
+
+                Console.WriteLine("Kas sa ahad jätkada- jah või ei?");
+                string Kasutavalik = Console.ReadLine();
+                if (Kasutavalik != "jah" && Kasutavalik != "ei") ;
+                {
+                    Console.WriteLine("Vale valik");
+                }
+                while (Kasutavalik != "jah" && Kasutavalik != "ei") ;
+                while (Kasutavalik == "jah") ;

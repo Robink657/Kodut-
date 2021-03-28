@@ -1,0 +1,19 @@
+ static void Main(string[] args)
+        {
+            Program.Evennumbers(30);
+            Program P = new Program();
+            int Sum = P.add(10, 20);
+
+
+
+
+        }
+        public int add(int FN,int SN)
+        {
+            int start = 0;
+            return= FN + SN;
+        }
+        public static void Evennumbers(int Target)
+        {
+            Console.WriteLine(start);
+            start = start + 2;

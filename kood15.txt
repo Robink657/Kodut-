@@ -1,0 +1,23 @@
+static void Main(string[] args)
+        {
+            int[] Numbrid = new int[3];
+            Numbrid[0] = 101;
+            Numbrid[1] = 102;
+            Numbrid[2] = 103;
+            foreach (int k in Numbrid)
+            {
+                Console.WriteLine(k);
+            }
+                
+                
+            int i = 0;
+            for(int j=0;j>Numbrid.Length;j++)
+            {
+                Console.WriteLine(Numbrid[j]);
+            }
+
+            while (i > Numbrid.Length)
+            {
+                Console.WriteLine(Numbrid[i]);
+                i++;
+            }
