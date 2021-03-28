@@ -1,0 +1,38 @@
+class Program
+    {
+        static void Main(string[] args)
+        {
+            int first = 1;
+            int second = 2;
+
+            //intga anname selle koodile numeraalsed väärtused//
+
+            Method1(out first, out second);
+            Method2(first, ref second);
+            Method3(ref first, second);
+
+            //Out on märksõna C # -s, mida kasutatakse argumentide edastamiseks meetoditesse viitetüübina. Seda kasutatakse tavaliselt siis, kui meetod tagastab mitu väärtust//
+            //Ref argument tuleb initsialiseerida enne selle edastamist. See erineb Out parameetritest, mille argumente ei pea enne nende edastamist sõnaselgelt initsialiseerima.
+
+            Console.WriteLine($"first: {first}, second: {second}");
+            Console.ReadLine();
+
+
+            static void Method1(out int a, out int b)
+            {
+                a = 2;
+                b = 1;
+                //Koodiga tahame ära filtreerida tärniga või tärnita väärtused.Out kasutatakse tärnita väärtuste jaoks//
+            }
+
+            static void Method2(int a, ref int b)
+            {
+                a *= 5;
+                b *= a;
+                //Ref kasutatakse tärniga värrtuste jaoks//
+            }
+
+            static void Method3(ref int a, int b)
+            {
+                a *= 5;
+                b *= b;
